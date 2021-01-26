@@ -6,14 +6,9 @@ class Song
   include Paramable::InstanceMethods
   include Memorable::InstanceMethods
 
-  attr_accessor :name
-  attr_reader :artist
+  attr_accessor :name, :artist
 
   @@songs = []
-
-  # def initialize
-  #   @@songs << self
-  # end
 
   def self.all
     @@songs
